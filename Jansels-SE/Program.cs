@@ -16,6 +16,7 @@ namespace Jansels_SE
         static void Main(string[] args)
         {
             Directory.CreateDirectory(@"B:\dl");
+            Directory.CreateDirectory(@"B:\JanselSE");
             Console.Title = "Jansel Software Enabler V1.0";
             Console.CursorVisible = false;
             string user = Environment.UserName;
@@ -25,6 +26,7 @@ namespace Jansels_SE
             {
                 Console.WriteLine("GPU: " + obj["Name"]);
             }
+            
             Console.WriteLine("Hit any key to start the Download");
             Console.ReadKey();
             WebClient Hänno = new WebClient();
@@ -32,10 +34,10 @@ namespace Jansels_SE
             string website1 = "https://onedrive.live.com/download?cid=5949261A3E41CD1B&resid=5949261A3E41CD1B%213509&authkey=ANQuNQ3BJESrSgk";
             string filename1 = "Firefox.zip";
             //OBS Studio
-            string website21 = "https://onedrive.live.com/download?cid=5949261A3E41CD1B&resid=5949261A3E41CD1B%213511&authkey=AGAXJys6qw_yo40";
-            string website22 = "https://onedrive.live.com/download?cid=5949261A3E41CD1B&resid=5949261A3E41CD1B%213508&authkey=AJ_E2NCTGUmsezw";
-            string filename21 = "obsstudio.zip";
-            string filename22 = "obsstarter.bat";
+            //string website21 = "https://onedrive.live.com/download?cid=5949261A3E41CD1B&resid=5949261A3E41CD1B%213511&authkey=AGAXJys6qw_yo40";
+            //string website22 = "https://onedrive.live.com/download?cid=5949261A3E41CD1B&resid=5949261A3E41CD1B%213508&authkey=AJ_E2NCTGUmsezw";
+            //string filename21 = "obsstudio.zip";
+            //string filename22 = "obsstarter.bat";
             //Process Hacker
             string website3 = "https://onedrive.live.com/download?cid=5949261A3E41CD1B&resid=5949261A3E41CD1B%213513&authkey=AF08ZxGxFgehLnw";
             string filename3 = "proshac.exe";
@@ -58,11 +60,11 @@ namespace Jansels_SE
             Console.WriteLine("Downloaded Firefox");
             ZipFile.ExtractToDirectory("Firefox.zip", @"B:\dl\");
             Console.WriteLine("Extracted Firefox");
-            Hänno.DownloadFile(website21, filename21);
-            Hänno.DownloadFile(website22, filename22);
-            Console.WriteLine("Downloaded OBS Studio (Method by the GNF&USE Team)");
-            ZipFile.ExtractToDirectory("obsstudio.zip", @"B:\dl\");
-            Console.WriteLine("Extracted OBS Studio");
+            //Hänno.DownloadFile(website21, filename21);
+            //Hänno.DownloadFile(website22, filename22);
+            //Console.WriteLine("Downloaded OBS Studio (Method by the GNF&USE Team)");
+            //ZipFile.ExtractToDirectory("obsstudio.zip", @"B:\dl\");
+            //Console.WriteLine("Extracted OBS Studio");
             Hänno.DownloadFile(website3, filename3);
             Console.WriteLine("Downloaded Process Hacker");
             Hänno.DownloadFile(website4, filename4);
@@ -83,11 +85,9 @@ namespace Jansels_SE
             Console.WriteLine("Extracted 7-Zip");
             Hänno.DownloadFile(website8, filename8);
             Console.WriteLine("Downloaded WinXShell");
-            ZipFile.ExtractToDirectory("WinXShell.zip", @"\");
+            ZipFile.ExtractToDirectory("WinXShell.zip", @"B:\JanselSE\");
             Console.WriteLine("Extracted WinXShell\nStarting WinXShell...");
-            Process.Start(@"B:\WinXShell\start.bat");
-            Console.ReadKey();
-
+            Process.Start(@"B:\JanselSE\WinXShell\start.bat");
         }
     }
 }
