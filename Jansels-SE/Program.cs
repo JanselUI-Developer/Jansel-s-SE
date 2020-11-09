@@ -13,7 +13,9 @@ namespace Jansels_SE
 {
     class Program
     {
+#pragma warning disable IDE0060 // Nicht verwendete Parameter entfernen
         static void Main(string[] args)
+#pragma warning restore IDE0060 // Nicht verwendete Parameter entfernen
         {
             Directory.CreateDirectory(@"B:\dl");
             Directory.CreateDirectory(@"B:\JanselSE");
