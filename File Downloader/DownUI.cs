@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace File_Downloader
 {
-    public partial class Form1 : Form
+    public partial class DownloaderUI : Form
     {
-        public Form1()
+        public DownloaderUI()
         {
             InitializeComponent();
+            bgprocess.Start();
+            Directory.CreateDirectory("B:/dl/FileDownloader");
         }
 
       
@@ -27,6 +30,7 @@ namespace File_Downloader
             DialogResult result = folderDlg.ShowDialog();
             if (result == DialogResult.OK)
             {
+
                 this.textBox2.Text = folderDlg.SelectedPath;
                 Environment.SpecialFolder root = folderDlg.RootFolder;
             }

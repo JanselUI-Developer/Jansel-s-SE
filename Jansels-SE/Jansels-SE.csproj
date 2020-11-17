@@ -41,6 +41,7 @@
     <Reference Include="System.Management.Instrumentation" />
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Windows" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />

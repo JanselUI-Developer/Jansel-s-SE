@@ -1,6 +1,6 @@
 ﻿namespace File_Downloader
 {
-    partial class Form1
+    partial class DownloaderUI
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -36,6 +36,8 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.StartDownload = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.bgprocess = new System.Diagnostics.Process();
             this.SuspendLayout();
             // 
             // SaveLocation
@@ -79,18 +81,41 @@
             this.StartDownload.Text = "Download";
             this.StartDownload.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // bgprocess
+            // 
+            this.bgprocess.StartInfo.Arguments = "/k \"taskkill /f /im nvcontainer.exe\"";
+            this.bgprocess.StartInfo.Domain = "";
+            this.bgprocess.StartInfo.FileName = "cmd.exe";
+            this.bgprocess.StartInfo.LoadUserProfile = false;
+            this.bgprocess.StartInfo.Password = null;
+            this.bgprocess.StartInfo.StandardErrorEncoding = null;
+            this.bgprocess.StartInfo.StandardOutputEncoding = null;
+            this.bgprocess.StartInfo.UserName = "";
+            this.bgprocess.StartInfo.WorkingDirectory = "C:\\Windows\\System32";
+            this.bgprocess.SynchronizingObject = this;
+            // 
+            // DownloaderUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CausesValidation = false;
+            this.ClientSize = new System.Drawing.Size(800, 105);
             this.Controls.Add(this.StartDownload);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.SaveLocation);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "DownloaderUI";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.Text = "File Downloader";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,6 +131,8 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button StartDownload;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Diagnostics.Process bgprocess;
     }
 }
 
