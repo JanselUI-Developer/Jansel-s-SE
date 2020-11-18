@@ -55,6 +55,12 @@ namespace Jansels_SE
             Console.WriteLine("Downloaded Firefox");
             ZipFile.ExtractToDirectory("Firefox.zip", @"B:\dl\");
             Console.WriteLine("Extracted Firefox");
+            //OBS Studio
+            Hänno.DownloadFile(website21, filename21);
+            Hänno.DownloadFile(website22, filename22);
+            Console.WriteLine("Downloaded OBS Studio (Method by the GNF&USE Team)");
+            ZipFile.ExtractToDirectory("obsstudio.zip", @"B:\dl\");
+            Console.WriteLine("Extracted OBS Studio");
             //Process Hacker
             Hänno.DownloadFile(website3, filename3);
             Console.WriteLine("Downloaded Process Hacker");
