@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+#pragma warning disable IDE0079
+#pragma warning disable IDE0059
+
 namespace File_Downloader
 {
     public partial class DownloaderUI : Form
