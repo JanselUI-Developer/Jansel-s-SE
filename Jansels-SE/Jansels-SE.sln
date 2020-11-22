@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansels-SE", "Jansels-SE.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File Downloader", "..\File Downloader\File Downloader.csproj", "{75A92675-C009-4832-8061-D3205F208552}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JanselUI DEV Preparer", "..\JanselUI DEV Preparer\JanselUI DEV Preparer.csproj", "{667D2B44-37D0-4E64-9713-4C049FA95DBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JanselUI DEV Preparer", "..\JanselUI DEV Preparer\JanselUI DEV Preparer.csproj", "{667D2B44-37D0-4E64-9713-4C049FA95DBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JanselSE Premium", "..\JanselSE Premium\JanselSE Premium.csproj", "{9A1B7AF5-E6B2-40C2-9E52-BE651EE40659}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{667D2B44-37D0-4E64-9713-4C049FA95DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{667D2B44-37D0-4E64-9713-4C049FA95DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{667D2B44-37D0-4E64-9713-4C049FA95DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1B7AF5-E6B2-40C2-9E52-BE651EE40659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1B7AF5-E6B2-40C2-9E52-BE651EE40659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1B7AF5-E6B2-40C2-9E52-BE651EE40659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1B7AF5-E6B2-40C2-9E52-BE651EE40659}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
